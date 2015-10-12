@@ -42,14 +42,12 @@ __author__ = 'Administrator'
 # print('growth rate: %d %% ' %7)
 
 classmates = ['Micheal', 'Bob', 'Tracy']
-# num = input('please input num:')
-# num1 = int(num)
-# if num1 >= len(classmates):
-#     print('out of range')
-# elif -num1 >= len(classmates):
-#     print('out of range')
-# else:
-#     print(classmates[num1])
+num = input('please input num:')
+num1 = int(num)
+if abs(num1) >= len(classmates):
+    print('out of range')
+else:
+    print(classmates[num1])
 
 # str = input('please input name:')
 # classmates.append(str)
@@ -79,27 +77,27 @@ classmates = ['Micheal', 'Bob', 'Tracy']
 # with open('sina.html', 'wb') as f:
 #     f.write(html)
 
-from tkinter import *
-import tkinter.messagebox as messagebox
-
-class Application(Frame):
-    def __init__(self, master=None):
-        Frame.__init__(self, master)
-        self.pack()
-        self.createWidgets()
-
-    def createWidgets(self):
-        self.nameInput = Entry(self)
-        self.nameInput.pack()
-        self.alertButton = Button(self, text='Hello', command=self.hello)
-        self.alertButton.pack()
-
-    def hello(self):
-        name = self.nameInput.get() or 'world'
-        messagebox.showinfo('Message', 'Hello, %s' % name)
-
-app = Application()
-# 设置窗口标题:
-app.master.title('Hello World')
-# 主消息循环:
-app.mainloop()
+# from tkinter import *
+# import tkinter.messagebox as messagebox
+#
+# class Application(Frame):
+#     def __init__(self, master=None):
+#         Frame.__init__(self, master)
+#         self.pack()
+#         self.createWidgets()
+#
+#     def createWidgets(self):
+#         self.nameInput = Entry(self)
+#         self.nameInput.pack()
+#         self.alertButton = Button(self, text='Hello', command=self.hello)
+#         self.alertButton.pack()
+#
+#     def hello(self):
+#         name = self.nameInput.get() or 'world'
+#         messagebox.showinfo('Message', 'Hello, %s' % name)
+#
+# app = Application()
+# # 设置窗口标题:
+# app.master.title('Hello World')
+# # 主消息循环:
+# app.mainloop()
