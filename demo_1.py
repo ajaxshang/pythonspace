@@ -41,13 +41,13 @@ __author__ = 'Administrator'
 # print('Age: %s. Gender: %s' %(20,True))
 # print('growth rate: %d %% ' %7)
 
-classmates = ['Micheal', 'Bob', 'Tracy']
-num = input('please input num:')
-num1 = int(num)
-if abs(num1) >= len(classmates):
-    print('out of range')
-else:
-    print(classmates[num1])
+# classmates = ['Micheal', 'Bob', 'Tracy']
+# num = input('please input num:')
+# num1 = int(num)
+# if abs(num1) >= len(classmates):
+#     print('out of range')
+# else:
+#     print(classmates[num1])
 
 # str = input('please input name:')
 # classmates.append(str)
@@ -101,3 +101,4 @@ else:
 # app.master.title('Hello World')
 # # 主消息循环:
 # app.mainloop()
+
